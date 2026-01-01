@@ -29,7 +29,7 @@ export res=${res:-0p25}
 # Data SOURCE
 #The sources provide inputs through curl calls invoked by get_grib.pl and get_inv.pl
 #ftpprd is NWS operational (and shorter retention)
-source=https://ftpprd.ncep.noaa.gov/data/nccf/com/gfs/prod/gdas.${tag}/${cyc}/atmos
+source=https://ftpprd.ncep.noaa.gov/pub/data/nccf/com/gfs/prod/gdas.${tag}/${cyc}/atmos
 
 #cfsv2 is the climate forecast system reanalysis, provinding information 1979-present
 #source=http://nomads.ncep.noaa.gov/pub/data/nccf/com/gfs/prod/gfs.${tag}${cyc}
