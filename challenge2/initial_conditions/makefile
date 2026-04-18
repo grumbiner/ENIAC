@@ -1,4 +1,4 @@
-all: mapping ic
+all: mapping
 
 mapping : mapping.f90
 	gfortran -Wall $< -o $(@)

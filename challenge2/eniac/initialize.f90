@@ -65,8 +65,8 @@ SUBROUTINE initialize(s,t,v,r,f,h,z,zeta,eta)
 !  z = z - 820
 !! Rescale the heights (10's of feet) to metric
 !  z    = z / fttom
-  !OPEN(11, FILE="fort.11", FORM="UNFORMATTED", STATUS="OLD")
-  OPEN(11, FILE="fort.11", FORM="FORMATTED", STATUS="OLD")
+  !OPEN(11, FILE="ic.txt", FORM="UNFORMATTED", STATUS="OLD")
+  OPEN(11, FILE="ic.txt", FORM="FORMATTED", STATUS="OLD")
   READ(11, *) z
   CLOSE(11)
 !for GFS initial conditions
