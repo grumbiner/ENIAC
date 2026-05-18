@@ -1,6 +1,0 @@
-Tools for model skill assessment should be shared in metrics directory. Historic starting points for skill are mentioned on the wiki, including the S1 skill score. 500 mb anomaly correlation should also be computed as it is WMO standard.
-
-As the shared initial conditions are from GDAS from the US NWS, the verification conditions will be as well. See 'initial' for more detail.
-
-Robert Grumbine
-15 February 2021

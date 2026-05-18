@@ -1,0 +1,28 @@
+Skill_measures:------------------------------------------------
+
+Tools for model skill assessment should be shared in skill_measures directory. Historic starting points for skill are mentioned on the wiki, including the S1 skill score. 500 mb anomaly correlation should also be computed as it is WMO standard, please contribute.
+
+As the shared initial conditions are from GDAS from the US NWS, the verification conditions will be as well. See 'initial' for more detail.
+
+Initial conditions:------------------------------------------------
+
+* https://nomads.ncep.noaa.gov/pub/data/nccf/com/gfs/prod/gdas.${tag}/${cyc}/atmos
+** gdas.tHHz.pgrb2.0p25.f000
+** gdas.tHHz.sfluxgrbf000.grib2
+
+Basic challenge is for 500 mb heights (500 hPa), initialized at 00 UTC from the NWS GDAS analysis, but with no updates on the boundaries. The ENIAC model used only an initial state. 
+
+Challenge2 permits updates along the boundary, which will come from
+* ftp://ftpprd.ncep.noaa.gov/pub/data/nccf/com/gfs/prod/gfs.YYYYMMDD/HH/atmos
+** gfs.tHHz.pgrb2.0p25.fHHH (hourly from 000 to 120 hours, 5 days)
+** gfs.t00z.sfluxgrbfHHH.grib2
+
+Global grib2 and text files are available at https://grumbinescience.org/ 
+
+for testing purposes, a program (ic.f90) and text output original_eniac_ic.txt 
+  are in directory initial_conditions. 
+
+The sample general ENIAC forecast model is in directory eniac
+
+Robert Grumbine
+6 May 2026
