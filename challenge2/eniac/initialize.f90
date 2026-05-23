@@ -72,7 +72,7 @@ SUBROUTINE initialize(s,t,v,r,f,h,z,zeta,eta)
 !for GFS initial conditions
   z = z - 5400.
   z = z / 10.
-  PRINT *, z
+!  PRINT *, z
 
   DO i = 1, p-1
     DO j = 1, q-1
