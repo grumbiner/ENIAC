@@ -134,8 +134,7 @@ PROGRAM ENIAC
 !***********************************************************!!
 !  BEGIN THE ITERATIVE SOLUTION OF THE EQUATIONS
   PRINT *,SECOND()*1000.,' ms'
-  !DO 2000 k = 0, 3*n-1
-  DO 2000 k = 0, 60 
+  DO k = 0, 60 
   
     DO j = 1, q-1
       DO i = 1, p-1
@@ -258,7 +257,7 @@ PROGRAM ENIAC
  9002 FORMAT (' ')
  9003 FORMAT (I3)
   
- 2000 CONTINUE
+  ENDDO
   
   PRINT *,SECOND()*1000.,' ms'
  
